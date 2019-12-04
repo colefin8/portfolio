@@ -1,0 +1,63 @@
+.grid-content {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-div {
+  background-size: cover;
+  background-position: center;
+  height: 10vw;
+  width: 10vw;
+}
+
+.icon-title p {
+  width: 100%;
+  text-align: center;
+}
+
+#css3 {
+  background-image: url("../public/icons/icons8-css3.svg");
+}
+
+#git {
+  background-image: url("../public/icons/icons8-git.svg");
+}
+
+#github {
+  background-image: url("../public/icons/icons8-github.svg");
+}
+
+#javascript {
+  background-image: url("../public/icons/icons8-javascript-logo.svg");
+}
+
+#nodejs {
+  background-image: url("../public/icons/icons8-nodejs.svg");
+}
+
+#npm {
+  background-image: url("../public/icons/icons8-npm.svg");
+}
+
+#postgres {
+  background-image: url("../public/icons/icons8-postgresql.svg");
+}
+
+#react {
+  background-image: url("../public/icons/icons8-react.svg");
+}
+
+#sass {
+  background-image: url("../public/icons/icons8-sass.svg");
+}
+
+#slack {
+  background-image: url("../public/icons/icons8-slack-new.svg");
+}

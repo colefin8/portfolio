@@ -1,35 +1,78 @@
 import { Link } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+const Header = props => {
+  const { siteTitle } = props
+  return (
+    <header
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: "0 5vw",
+        background: `#DD5E44`,
+        marginBottom: `1.45rem`,
+        display: "flex",
+        position: "fixed",
+        zIndex: "2",
+        top: "0",
+        width: "100vw",
+        justifyContent: "space-between",
+        alignItems: "center",
+        color: `#E0D9D7`,
+        height: "120px",
+        fontFamily: "Raleway, sans-serif",
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+      <div
+        style={{
+          maxWidth: 960,
+          padding: `1.45rem 0`,
+        }}
+      >
+        <h1
           style={{
-            color: `white`,
+            margin: 0,
+            color: `#E0D9D7`,
             textDecoration: `none`,
+            fontFamily: "Raleway, sans-serif",
           }}
         >
           {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+        </h1>
+      </div>
+      <h2
+        className="header-h2"
+        style={{ margin: 0, fontFamily: "Raleway, sans-serif" }}
+        onClick={() => {
+          scrollTo("#about")
+        }}
+      >
+        About
+      </h2>
+      <h2
+        className="header-h2"
+        style={{ margin: 0, fontFamily: "Raleway, sans-serif" }}
+        onClick={() => scrollTo("#skills")}
+      >
+        Skills
+      </h2>
+      <h2
+        className="header-h2"
+        style={{ margin: 0, fontFamily: "Raleway, sans-serif" }}
+        onClick={() => scrollTo("#contact")}
+      >
+        Contact
+      </h2>
+      <h2
+        className="header-h2"
+        style={{ margin: 0, fontFamily: "Raleway, sans-serif" }}
+        onClick={() => scrollTo("#projects")}
+      >
+        Projects
+      </h2>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
