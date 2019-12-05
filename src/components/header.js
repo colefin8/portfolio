@@ -9,7 +9,7 @@ const Header = props => {
     <header
       style={{
         padding: "0 5vw",
-        background: `#DD5E44`,
+        background: `#3b4043`,
         marginBottom: `1.45rem`,
         display: "flex",
         position: "fixed",
@@ -18,7 +18,7 @@ const Header = props => {
         width: "100vw",
         justifyContent: "space-between",
         alignItems: "center",
-        color: `#E0D9D7`,
+        color: `#b2b2b2`,
         height: "120px",
         fontFamily: "Raleway, sans-serif",
       }}
@@ -32,7 +32,7 @@ const Header = props => {
         <h1
           style={{
             margin: 0,
-            color: `#E0D9D7`,
+            color: `#b2b2b2`,
             textDecoration: `none`,
             fontFamily: "Raleway, sans-serif",
           }}

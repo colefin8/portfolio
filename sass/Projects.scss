@@ -1,0 +1,24 @@
+#listo-screenshot-1 {
+  background-image: url("../public/icons/screenshots/listo-screenshot-1.png");
+}
+#listo-screenshot-2 {
+  background-image: url("../public/icons/screenshots/listo-screenshot-2.png");
+}
+#listo-screenshot-3 {
+  background-image: url("../public/icons/screenshots/listo-screenshot-3.png");
+}
+
+.screenshot {
+  min-height: 70vh;
+  width: 15vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.screenshot-flex {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

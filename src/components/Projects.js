@@ -1,4 +1,5 @@
 import React from "react"
+import "../../sass/Projects.css"
 
 const Projects = () => {
   return (
@@ -14,11 +15,19 @@ const Projects = () => {
         PROJECTS
       </h1>
       <p style={{ fontFamily: "Raleway, sans-serif" }} className="content">
-        I am a full stack web developer from Provo, Utah. Recently leaving a
-        management position at a high-end woodworking business and looking for
-        new challenges (or some other bullshit idk)
+        {`Listo: a budgeting and list making app that is focused on shareable lists and a user friendly (read: user-proof) design`}
       </p>
-      <div>PROJECT 1</div>
+      <div className="screenshot-flex">
+        <div className="screenshot" id="listo-screenshot-1">
+          Landing Page
+        </div>
+        <div className="screenshot" id="listo-screenshot-2">
+          Loading Screen
+        </div>
+        <div className="screenshot" id="listo-screenshot-3">
+          User Dashboard
+        </div>
+      </div>
       <p style={{ fontFamily: "Raleway, sans-serif" }} className="content">
         I am a full stack web developer from Provo, Utah. Recently leaving a
         management position at a high-end woodworking business and looking for
